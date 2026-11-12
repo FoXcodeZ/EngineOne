@@ -6,5 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(SDL3 REQUIRED)
 
-add_executable(EngineOne main.cpp)
+add_executable(EngineOne main.cpp
+        Application.cpp
+        Application.hpp)
 target_link_libraries(EngineOne SDL3::SDL3)
