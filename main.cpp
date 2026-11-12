@@ -6,12 +6,13 @@
 // ================================================================================
 
 #include "Application.hpp"
+#include <memory>
 
 int main()
 {
-    one::Application game;
+    std::unique_ptr<one::Application> game {};
 
-    game.Initialize();
-    game.Run();
-    game.Quit();
+    game->Initialize();
+    game->Run();
+    game->Quit();
 }
